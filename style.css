@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.red {color: red}
+.yellow {color: orange}
+.blue {color: deepskyblue}
+body {
+}
+.wrapper {
+    margin: 50px auto;
+    width: 60%;
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+.top-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    justify-content: space-between;
+}
+.info-text {
+    padding-right: 50px;
+}
+.info-text h1 {
+    color: #323232;
+    font-size: 35px;
+    font-weight: 500;
+
+}
+.info-text h2 {
+    color: #805ad5;
+    font-size: 23px;
+    font-weight: bold;
+}
+.info-text p {
+    color: #4f4f4f;
+    font-size: 18px;
+    text-align:justify;
+    text-justify: inter-word;
+    padding-top: 20px;
+}
+img {
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+.separator {
+    width: 90%;
+    height: 0px;
+    margin: 10px 10px auto;
+    border: 1px solid #cccc;
+    border-radius: 5px;
+    background-color: #cccc;
+}
+.middle-section {
+    display: flex;
+    width: 90%;
+    margin: 10px 10px auto;
+    min-height: 500px;
+    padding-top: 10px;
+}
+.middle-section .content {
+    width: 500px;
+    margin: 20px;
+    padding: 5px;
+}
+.middle-section .left {
+    flex: 2;
+    min-height: 100px;
+}
+
+.middle-section .header {
+    color: #9f7aea; /* purple-500 */
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.middle-section .header > .one-bolder {
+    font-weight: bolder;
+    font-size: 55px;
+    margin-left: -48px;
+    color: #44337a;
+}
+.middle-section .title {
+    color: #4a5568; /* gray-700 */
+    letter-spacing: 2px;
+}
+
+.middle-section p {
+    color: #4f4f4f;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
+}
+.middle-section h5 {
+    color: #a0aec0;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.middle-section .right {
+    flex: 1;
+    display: block;
+    min-height: 100px;
+
+}
+.middle-section .right .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    height: 60px;
+    width: 430px;
+    background: var(--b);
+}
+.middle-section .right .content .title {
+    justify-items: flex-start;
+    margin-top: 12px;
+    margin-left: 10px;
+    color: var(--skill);
+}
+.middle-section .right .content .ability-power {
+    margin-top: -15px;
+}
+.middle-section .right .content .title {
+    font-size: 18px;
+}
+/* Circular percentage for skills*/
+:root {
+    --size: 50px;
+    --bord: 10px;
+}
+
+.chart {
+    width: var(--size);
+    height: var(--size);
+    margin: 1em auto;
+    border-radius: 50%;
+    background-image: conic-gradient(lightseagreen var(--value), lightgrey var(--value));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - var(--bord));
+    height: calc(100% - var(--bord));
+    background: white;
+    border-radius: inherit;
+}
+
+p {
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+}
+
+
+.x-60 {
+    --value: var(--f);
+}
+
+/* End */
+
+footer {
+    display: flex;
+    min-height: 50px;
+    padding: 40px;
+    justify-content: space-between;
+}
+footer h3 {
+    color: #ccc;
+    font-weight: 200;
+}
